@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/PaypalProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:id="@+id/PaypalUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/PaypalProfile"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/PaypalUsername"
+        android:layout_toRightOf="@id/PaypalProfile"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:text="Gather:"
+        android:layout_toRightOf="@id/PaypalProfile"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/PaypalGather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:text=""
+        android:layout_toRightOf="@id/A"/>
+
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PaypalGather"
+        android:text="Payment:"
+        android:layout_toRightOf="@id/PaypalProfile"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/PaypalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PaypalGather"
+        android:text="$5.00"
+        android:layout_toRightOf="@id/B"/>
+
+    <TextView
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PaypalPayment"
+        android:text="Date:"
+        android:layout_toRightOf="@id/PaypalProfile"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/PaypalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PaypalPayment"
+        android:text=""
+        android:layout_toRightOf="@id/C"/>
+    
+    <Button
+        android:id="@+id/PaypalPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:background="@drawable/button"
+        android:layout_below="@id/PaypalGather"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

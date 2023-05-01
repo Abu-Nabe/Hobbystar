@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".PremiumActivity">
+
+
+    <TextView
+        android:id="@+id/yea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium Account Setting"
+        android:textSize="25sp"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/AccountPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_below="@id/yea"
+        android:text="Account Privacy"
+        android:layout_marginTop="23dp"/>
+    
+    <Button
+        android:id="@+id/AccountPublic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public"
+        android:layout_toLeftOf="@id/line"
+        android:background="@drawable/button"
+        android:layout_below="@id/AccountPrivacy"/>
+    
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/AccountPrivacy"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/AccountPrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Private"
+        android:layout_toRightOf="@id/line"
+        android:background="@drawable/button"
+        android:layout_below="@id/AccountPrivacy"/>
+
+    <TextView
+        android:id="@+id/AccountPrivacy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_below="@id/AccountPrivate"
+        android:text="Premium Account"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/DisabledPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regular"
+        android:layout_toLeftOf="@id/line"
+        android:background="@drawable/grey_corners"
+        android:layout_below="@id/AccountPrivacy1"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/AccountPrivacy"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/EnabledPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium"
+        android:layout_toRightOf="@id/line"
+        android:background="@drawable/grey_corners"
+        android:layout_below="@id/AccountPrivacy1"/>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="confirm"
+        android:layout_marginBottom="60dp"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

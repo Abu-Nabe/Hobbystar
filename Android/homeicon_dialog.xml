@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Home_Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_search"
+                android:text="Search"
+                android:textColor="@android:color/black" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/post_image1"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/Home_Username"
+            android:layout_height="300dp"/>
+
+            <Button
+                android:layout_below="@id/post_image1"
+                android:id="@+id/Home_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#3CB371"
+                android:layout_centerHorizontal="true"
+                android:text="Publish"
+                android:textSize="15dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/CancelPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/ic_clear_24"
+        android:layout_below="@id/post_image1"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>

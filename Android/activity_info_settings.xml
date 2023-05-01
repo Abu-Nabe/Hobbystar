@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoSettings">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3CB371"
+        style="@style/HeaderBar"
+        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        android:elevation="4dp" />
+
+    <TextView
+        android:id="@+id/info_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:padding="20dp"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/chat_toolbar"/>
+
+    <TextView
+        android:id="@+id/info_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:padding="20dp"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/info_email"/>
+
+    <TextView
+        android:id="@+id/info_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:padding="20dp"
+        android:background="@drawable/button"
+        android:layout_below="@id/info_password"/>
+
+    <TextView
+        android:id="@+id/username_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_password"
+        android:padding="20dp"
+        android:layout_toRightOf="@id/info_username"
+        android:text="username" />
+
+    <TextView
+        android:id="@+id/info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:padding="20dp"
+        android:background="@drawable/button"
+        android:layout_below="@id/info_username"/>
+
+    <TextView
+        android:id="@+id/name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FullName"
+        android:padding="20dp"
+        android:layout_toRightOf="@id/info_name"
+        android:layout_below="@id/info_username"/>
+
+    <TextView
+        android:id="@+id/surnamename_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LastName"
+        android:padding="20dp"
+        android:layout_toRightOf="@id/name_info"
+        android:layout_below="@id/info_username"/>
+
+    <TextView
+        android:id="@+id/info_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOB"
+        android:padding="20dp"
+        android:background="@drawable/button"
+        android:layout_below="@id/info_name"/>
+
+
+    <TextView
+        android:id="@+id/dob_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOB"
+        android:padding="20dp"
+        android:layout_toRightOf="@id/info_dob"
+        android:layout_below="@id/info_name"/>
+
+    <Button
+        android:id="@+id/info_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_dob"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Confirm"
+        android:textSize="22sp"
+        android:background="@drawable/button"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/emailverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_continue"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Haven't verfied your email yet? Click here and a verification link will be sent to you."
+        android:ems="15"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+</RelativeLayout>

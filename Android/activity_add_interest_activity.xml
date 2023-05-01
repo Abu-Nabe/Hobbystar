@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_interest_activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3CB371"
+        style="@style/HeaderBar"
+        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        android:elevation="4dp"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/AddInterestProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/chat_toolbar"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_above="@id/damn"
+        android:layout_centerVertical="true"
+        android:src="@drawable/profile" />
+
+    <Button
+        android:id="@+id/Add_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uninterested"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:layout_below="@id/chat_toolbar"/>
+
+    <TextView
+        android:id="@+id/Add_No_Interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interests"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/damn"/>
+
+    <LinearLayout
+        android:id="@+id/damn"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/Add_Message"
+        android:background="@android:color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Add_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Add_No_Interests"/>
+
+</RelativeLayout>

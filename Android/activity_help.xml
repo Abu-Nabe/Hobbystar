@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <Button
+        android:id="@+id/HelpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+        android:text="Done"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/HelpInfo4"
+        android:padding="5dp"/>
+    
+    <TextView
+        android:id="@+id/HelpInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page: The Icon at the top helps you to search for users and tapping on the blank screen below it helps
+you upload personal pictures."
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/HelpInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HelpInfo"
+        android:text="Message Page: In your friendslist, when you heart a person and they heart you back it turns red, otherwise it stays silver."
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/HelpInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HelpInfo1"
+        android:text="Main Page: Interest Button shows the picures/videos of those you're interested in, if you upload pictures/videos and you gain likes, you'll gain points, which will give you rewards."
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/HelpInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HelpInfo2"
+        android:text="Notification Page: In the top right, there's an icon, you'll receive gather requests in your notification Page instead of the Message Page."
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/HelpInfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HelpInfo3"
+        android:text="Profile Page: Update your profie pic by tapping on your profile, and choose a pic you want by tapping on your icon."
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

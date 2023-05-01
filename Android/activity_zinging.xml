@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SwipeRelative"
+    tools:context=".Zinging">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/btn_nav"
+        app:itemTextColor="#FFF"
+        app:itemIconSize="30dp"
+        app:menu="@menu/nav_menu"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        style="@style/HeaderBar"
+        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        app:menu="@menu/go_back_menu"
+        android:elevation="4dp">
+        <ImageView
+            android:id="@+id/ZingingPoints"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/star_plus"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_points"
+            android:layout_marginRight="25dp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/ZingingReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HobbyStars"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:textColor="#3CB371"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3CB371"
+        android:layout_below="@id/my_toolbar"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/white">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/unknown1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/unknown2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interests"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ZingingPics"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@id/fakeView"
+                android:layout_below="@id/SelectGrid"
+                android:layout_above="@id/BottomNavigation"
+                android:layout_height="match_parent" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ZingingVids"
+                android:layout_width="match_parent"
+                android:layout_below="@id/SelectGrid"
+                android:layout_above="@id/BottomNavigation"
+                android:layout_toRightOf="@id/fakeView"
+                android:layout_height="match_parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/GridZinging"
+        android:layout_width="match_parent"
+        android:layout_below="@id/SelectGrid"
+        android:layout_above="@id/BottomNavigation"
+        android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/All_Pics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Pics"
+            android:layout_below="@id/tabLayout"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/inputs"
+            android:textColor="@android:color/holo_green_light"/>
+
+
+
+    <ImageView
+        android:id="@+id/SelectGrid"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tabLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_grid_on_24"/>
+
+    <TextView
+        android:id="@+id/All_Vids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/inputs"
+        android:gravity="end"
+        android:text="All Vids"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/holo_green_light" />
+
+    <View android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:indeterminateTint="#3CB371"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="StoryActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Story_profileimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/StoryPoints"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/StoryPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_dark_star"
+        android:text="0"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/StoryWriting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StoryUsername"
+        android:text=""
+        android:textStyle="bold"
+        android:background="@drawable/grey_corners"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/Story_profileimg"/>
+
+    <TextView
+        android:id="@+id/StoryUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StoryPoints"
+        android:text="Username"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/Story_profileimg"/>
+
+</RelativeLayout>

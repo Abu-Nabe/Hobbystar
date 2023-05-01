@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BugSettings">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Bug"
+        android:layout_above="@id/imagebug"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editbug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/grey_corners"
+        android:textColorHint="#008000"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:text="Description of Bug"/>
+
+
+    <ImageView
+        android:id="@+id/imagebug"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_add_a_photo"
+        android:layout_above="@id/editbug"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/confirm_bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editbug"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="confirm"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewInfo">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/Firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@id/new_username"
+        android:hint="firstname"
+        android:ems="10"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/Lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@id/Firstname"
+        android:hint="lastname"
+        android:ems="10"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/new_username"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/image"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:ems="10"
+        android:hint="Username"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/new_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Lastname"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:ems="10"
+        android:hint="DOB"
+        android:textColor="@android:color/black"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="wrap_content"
+        android:cursorVisible="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_dob"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Confirm Info"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

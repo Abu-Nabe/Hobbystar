@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GatherSettings">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/Gather_EditName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/image"
+        android:ems="10"
+        android:hint="Gather"
+        android:maxLength="10"
+        android:background="@drawable/grey_corners"
+        android:padding="5dp"
+        android:textCursorDrawable="@android:color/black"
+        android:drawableLeft="@drawable/ic_edit_24"/>
+
+    <EditText
+        android:id="@+id/Gather_EditBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gather_EditName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:maxLength="10"
+        android:textCursorDrawable="@android:color/black"
+        android:ems="10"
+        android:hint="Gatherer"
+        android:background="@drawable/grey_corners"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_edit_24" />
+
+
+    <Button
+        android:id="@+id/ConfirmGatherChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gather_EditBase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Continue"
+        android:textSize="22sp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/HomeFragment"
+    tools:context=".HomeActivity">
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:indeterminateTint="#3CB371"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/btn_nav"
+        app:itemTextColor="#D3D3D3"
+        app:itemIconSize="30dp"
+        app:menu="@menu/nav_menu"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        app:theme="@style/ActionBarThemeOverlay">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/HomeIcon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15.5dp"
+            app:civ_border_color="#008000"
+            app:civ_border_width="3dp"
+            android:src="@drawable/ic_search" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/StoryRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_toolbar"
+        android:layout_gravity="center"
+        android:background="#3CB371"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/HomePosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/BottomNavigation"
+        android:layout_below="@id/StoryRecycler" />
+
+</RelativeLayout>

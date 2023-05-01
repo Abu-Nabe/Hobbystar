@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinkActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/Link1"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@id/Link3"
+        android:hint="Business"
+        android:ems="10"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+    
+    <ImageView
+        android:id="@+id/Copy1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_crop_square_24"
+        android:layout_toRightOf="@id/Link3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/image"/>
+
+    <ImageView
+        android:id="@+id/Copy2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_crop_square_24"
+        android:layout_toRightOf="@id/Link1"
+        android:layout_below="@id/Link3"/>
+
+    <ImageView
+        android:id="@+id/Copy3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_crop_square_24"
+        android:layout_toRightOf="@id/Link1"
+        android:layout_below="@id/Link1"/>
+
+    <ImageView
+        android:id="@+id/Copy4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_crop_square_24"
+        android:layout_toRightOf="@id/Link1"
+        android:layout_below="@id/Link2"/>
+
+
+    <EditText
+        android:id="@+id/Link2"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@id/Link1"
+        android:hint="Other"
+        android:ems="10"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/Link3"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/image"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:ems="10"
+        android:hint="Social Media"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/Link4"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Link2"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:ems="10"
+        android:hint="Other"
+        android:textColor="@android:color/black"
+        android:padding="5dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="wrap_content"
+        android:cursorVisible="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Link4"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Done"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

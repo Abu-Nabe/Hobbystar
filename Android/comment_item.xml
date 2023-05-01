@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile"
+        android:id="@+id/commenters_image"/>
+    
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/commenters_image"
+        android:layout_toLeftOf="@id/like_comment"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:id="@+id/comment_username"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comments"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/like_comment"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/Upvotes"
+        android:src="@drawable/like"/>
+
+    <TextView
+        android:id="@+id/Upvotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="8sp"
+        android:layout_below="@id/linear"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

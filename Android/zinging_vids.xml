@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/Point"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_star"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        app:tint="#800000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="O points"
+        android:id="@+id/VidPoint"
+        android:layout_below="@id/Point"
+        android:layout_centerHorizontal="true"/>
+
+    <VideoView
+        android:id="@+id/Vid_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/VidPoint"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/OptionImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@android:color/black"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/ic_option" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Vid_ProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/profile"
+        android:layout_below="@id/Vid_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Vid_Username"
+        android:text="Username"
+        android:layout_below="@id/Vid_image"
+        android:layout_toRightOf="@id/Vid_ProfileImage"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Vid_Points"
+        android:text="0"
+        android:textAlignment="center"
+        android:layout_below="@id/Vid_Username"
+        android:drawableLeft="@drawable/ic_dark_star"
+        android:layout_toRightOf="@id/Vid_ProfileImage"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:id="@+id/Vid_Description"
+        android:layout_below="@id/Vid_Points"
+        android:layout_toRightOf="@id/Vid_ProfileImage"
+        android:background="@drawable/grey_corners"
+        android:maxLength="200"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Vid_Time"
+        android:layout_above="@id/Vid_image"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="true"
+        android:text="Date"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Vid_Hobby"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="true"
+        android:text="Hobby"
+        android:layout_below="@id/Vid_image"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/Vid_Comment"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_comment"
+        android:layout_below="@id/Vid_Username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        app:tint="#000000"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/PlayVideo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_radio_button_checked_24"
+        android:layout_above="@id/Vid_image"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+</RelativeLayout>

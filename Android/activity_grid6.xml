@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D3D3D3"
+    tools:context="com.zinging.hobbystar.grid.GridActivity6">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/StVincentGrenadines"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/stvincentgrenadines"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/Sudan"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sudan"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Suriname"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/suriname"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Sweden"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sweden"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Switzerland"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/switzerland"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/Syria"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/syria"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Taiwan"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/taiwan"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Tajikistan"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tajikistan"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Tanzania"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/tanzania"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/Thailand"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/thailand"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/TimorLeste"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/timorleste"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Togo"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/togo"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Tonga"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/tonga"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/TrinidadAndTobago"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/trinidadandtobago"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Tunisia"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/tunisia"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Turkey"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/turkey"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Turkmenistan"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/turkmenistan"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/Tuvalu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/tuvalu"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Uganda"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/uganda"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Ukraine"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ukraine"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/UnitedArabEmirates"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/unitedarabemirates"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/UnitedKingdom"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/unitedkingdom"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/UnitedStates"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/unitedstates"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Uruguay"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/uruguay"
+            android:scaleType="fitXY"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Uzbekistan"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/uzbekistan"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/Vanuatu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/vanuatu"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/VaticanCity"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/holysee"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Venezuela"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/venezuela"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear7"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/Vietnam"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/vietnam"
+            android:layout_toRightOf="@id/anime"/>
+
+        <ImageView
+            android:id="@+id/Yemen"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/yemen"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/Zambia"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/zambia"
+            android:scaleType="fitXY"/>
+
+
+        <ImageView
+            android:id="@+id/Zimbabwe"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/zimbabwe"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear8"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear8"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Back"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

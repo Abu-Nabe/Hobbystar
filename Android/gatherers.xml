@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/GatherProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile" />
+
+
+    <LinearLayout
+        android:id="@+id/Interest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/GatherProfile"
+        android:layout_toRightOf="@id/GatherProfile"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/GatherUsername1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/GatherPoints1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_whatshot_24"
+            android:text="Points" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Gather_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Remove"
+            android:textSize="10sp"
+            android:layout_gravity="end"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

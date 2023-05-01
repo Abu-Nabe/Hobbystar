@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SearchUsers"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile" />
+
+
+    <LinearLayout
+        android:id="@+id/SearchLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/SearchUsers"
+        android:layout_toRightOf="@id/SearchUsers"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SearchUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SearchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Points" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ChatMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/Unreadmsg"
+        android:maxLength="10"
+        android:textColor="#00FF00"/>
+
+    <TextView
+        android:id="@+id/Unreadmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:paddingRight="5dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/ChatDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ChatMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="" />
+
+</RelativeLayout>

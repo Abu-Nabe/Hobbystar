@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zinging.hobbystar.RegisterUsername">
+
+
+
+    <ImageView
+        android:id="@+id/register_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/register_usernamee"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/hobbylogo"/>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:indeterminateTint="#3CB371"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/register_usernamee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:maxLength="16"
+        android:cursorVisible="true"
+        android:maxLines="1"
+        android:textCursorDrawable="@android:color/black"
+        android:hint="Username"
+        android:background="@drawable/inputs"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/register_usercontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_usernamee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Create Account"
+        android:textSize="22sp"
+        android:background="@drawable/button"
+        android:padding="15dp"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zinging.hobbystar.GatherChats">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3CB371"
+        style="@style/HeaderBar"
+        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        android:elevation="4dp"
+        app:menu="@menu/message_icon"
+        />
+
+    <LinearLayout
+        android:id="@+id/PersonalGatherLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_toolbar"
+        android:background="@drawable/inputs"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/GatherGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gather"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+      <TextView
+            android:id="@+id/GatherChatPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop  ="5dp"
+            android:text="Chat" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/PersonalGatherLinear"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gatherers"
+        android:layout_below="@id/PersonalGatherLinear"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/No_Gathers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/PersonalGatherLinear"
+        android:layout_toLeftOf="@id/TV1"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TV1"
+        android:background="@android:color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/GatherChatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view1"/>
+
+
+
+
+</RelativeLayout>

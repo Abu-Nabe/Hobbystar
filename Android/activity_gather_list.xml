@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zinging.hobbystar.PicClick">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        style="@style/HeaderBar"
+        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        android:elevation="4dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/GatherListView"
+        android:layout_below="@id/line"/>
+
+    <TextView
+        android:id="@+id/GatherListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gather"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/GathererListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gatherer"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/chat_toolbar"
+        android:layout_toRightOf="@id/No_Gathers"
+        android:layout_marginLeft="3dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/No_Gathers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_marginLeft="1dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/chat_toolbar"
+        android:textSize="24sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/chat_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/GathererListName"/>
+
+</RelativeLayout>

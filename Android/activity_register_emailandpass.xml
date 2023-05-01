@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zinging.hobbystar.RegisterEmailandPass">
+
+
+    <ImageView
+        android:id="@+id/register_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/register_username"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/hobbylogo"/>
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@android:color/black"
+        android:background="@drawable/inputs"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/email"/>
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="wrap_content"
+        android:cursorVisible="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textCursorDrawable="@android:color/black"
+        android:inputType="textPassword"
+        android:background="@drawable/inputs"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/password" />
+
+
+    <Button
+        android:id="@+id/user_passContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Continue"
+        android:textSize="22sp"
+        android:maxLines="1"
+        android:background="@drawable/button"
+        android:padding="15dp"/>
+
+
+
+
+</RelativeLayout>

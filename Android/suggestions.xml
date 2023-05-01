@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/SuggestUsers"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile" />
+
+
+        <LinearLayout
+            android:id="@+id/Suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/SuggestUsers"
+            android:layout_toRightOf="@id/SuggestUsers"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SuggestionUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SuggestionRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="You may know this person!" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SuggestionAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Add User"
+            android:textColor="#008000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SuggestionRemove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="6dp"
+            android:text="Decline"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold" />
+
+
+
+
+
+
+    </LinearLayout>
+    
+
+
+
+</RelativeLayout>

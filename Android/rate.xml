@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Rateprofile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Rateprofile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/UsernameRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/rate_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/inputs"
+                android:gravity="center_horizontal"
+                android:text="friends"
+                android:textAlignment="center"
+                android:textColor="#32CD32"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/rate_crush"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/dislike"
+        android:layout_alignParentRight="true" />
+
+
+
+</RelativeLayout>

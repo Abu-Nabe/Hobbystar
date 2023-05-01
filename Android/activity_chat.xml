@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat_containment"
+    tools:context=".ChatActivity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/btn_nav"
+        app:itemTextColor="#FFF"
+        app:itemIconSize="30dp"
+        app:menu="@menu/nav_menu"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3CB371"
+        style="@style/HeaderBar"
+        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        android:elevation="4dp"
+        app:menu="@menu/message_icon"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MessageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/BottomNavigation"
+            android:layout_below="@id/chat_toolbar"
+            android:orientation="vertical" />
+
+</RelativeLayout>
