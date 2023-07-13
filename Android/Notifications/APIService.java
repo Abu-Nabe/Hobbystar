@@ -9,7 +9,7 @@ public interface APIService {
     @Headers(
             {
                     "Content-Type:application/json",
-                    "Authorization:key=AAAAthneo50:APA91bEhw_06joRsBVA8x8sTaab4nPyQySXilkOajj33wI59mSVX62p_X5swDgbA4VfhewfYV84KZHnHRhX1mHCi4degFcnWClkrkTWQxlwe6xSqB3LMvIQns4NA6vcBEstxnocYn3qm"
+                    "Authorization:key=// removed
             }
     )
 
